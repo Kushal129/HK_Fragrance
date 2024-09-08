@@ -4,8 +4,8 @@ import cartSlice from "./cartSlice";
 // First creat a store then configureStore and create a reducer
 export const store = configureStore({
     reducer: {
-        cart : cartSlice
+        cart: cartSlice
 
     },
-    devTools:true
+    devTools: true
 })

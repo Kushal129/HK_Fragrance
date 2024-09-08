@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from 'uuid';
 
+
 const initialState = JSON.parse(localStorage.getItem('cart')) ?? [];
 
 const cartSlice = createSlice({
@@ -23,9 +24,9 @@ const cartSlice = createSlice({
             const { id, quantity } = action.payload;
             const existingProduct = state.find(item => item.id === id);
             if (existingProduct) {
-              existingProduct.quantity = quantity;
+                existingProduct.quantity = quantity;
             }
-          }          
+        }
     }
 });
 
