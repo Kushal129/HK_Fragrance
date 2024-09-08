@@ -8,8 +8,6 @@ import Loader from '../../components/Loader/Loader';
 import Layout from '../../components/Layout/Layout';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 
-
-
 function Login() {
     const context = useContext(myContext);
     const { loading, setLoading } = context;
